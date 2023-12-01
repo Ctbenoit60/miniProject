@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalize</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>A calendar you can personalize</p>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Sign In</button>
+        </div>
+    </form>
+
+    <div class="switch-form">
+        Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
